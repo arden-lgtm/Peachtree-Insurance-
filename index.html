@@ -87,7 +87,7 @@
   }
 
   /* ---------- Peachtree's own logo asset (black card, baked-in wordmark) ---------- */
-  .pt-logo{display:block;height:158px;width:360px;object-fit:fill;border-radius:0;flex:none;}
+  .pt-logo{display:block;height:158px;width:360px;max-width:100%;aspect-ratio:360/158;object-fit:fill;border-radius:0;flex:none;}
   .pt-logo--lg{height:74px;width:auto;object-fit:contain;}
   .btn{
     display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -114,6 +114,15 @@
   section[id]{scroll-margin-top:210px;}
   @media (max-width:900px){
     .nav-cta .btn-ghost{display:none;}
+  }
+  @media (max-width:700px){
+    header.site{position:static;}
+    .nav{grid-template-columns:1fr;justify-items:center;row-gap:16px;padding:24px 0;}
+    .pt-logo{width:220px;}
+    .nav-side{align-items:center;}
+    .nav-cta{flex-wrap:wrap;justify-content:center;}
+    .nav-cta-sub{flex-wrap:wrap;justify-content:center;}
+    section[id]{scroll-margin-top:16px;}
   }
 
   /* ---------- hero ---------- */
