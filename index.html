@@ -164,7 +164,7 @@
 
   /* ---------- section shell ---------- */
   section{padding:96px 0;}
-  section.approach{padding-top:40px;}
+  section.approach{padding-top:40px;padding-bottom:48px;}
   .approach .eyebrow,
   .approach h2,
   .approach .lede,
@@ -217,7 +217,11 @@
   }
 
   /* ---------- approach ---------- */
-  .approach{background:var(--surface-2);}
+  .approach{
+    background:
+      radial-gradient(ellipse 900px 500px at 8% 0%, rgba(255,255,255,0.22), transparent 60%),
+      linear-gradient(155deg, #F1CDB8 0%, #E9BCA3 38%, #DFA48C 70%, #D8957F 100%);
+  }
   .approach-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:start;}
   @media (max-width:900px){ .approach-grid{grid-template-columns:1fr;gap:40px;} }
   .approach-list{display:flex;flex-direction:column;}
