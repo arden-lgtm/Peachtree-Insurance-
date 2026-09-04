@@ -172,6 +172,8 @@
   /* ---------- section shell ---------- */
   section{padding:96px 0;}
   #medicare{padding-bottom:48px;}
+  #resources{padding-top:48px;}
+  #resources .section-head .eyebrow{color:#B5551F;}
   section.approach{padding-top:40px;padding-bottom:48px;}
   .approach .eyebrow,
   .approach h2,
@@ -306,7 +308,11 @@
   #resources .learning-grid{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){ #resources .learning-grid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:900px){ #resources .learning-grid{grid-template-columns:1fr;} }
-  #resources .learning-card{min-height:320px;padding-top:40px;padding-bottom:40px;}
+  #resources .learning-card{padding:16px 15px;gap:7px;border:3px solid var(--stone);}
+  #resources .learning-card .practice-icon{width:24px;height:24px;}
+  #resources .learning-card h3{font-size:14px;}
+  #resources .learning-card p{font-size:12px;line-height:1.45;}
+  #resources .learning-card .learning-link{font-size:12px;}
   .learning-card{
     background:var(--surface);border:1px solid var(--border);border-radius:10px;
     padding:32px 28px;display:flex;flex-direction:column;gap:14px;
