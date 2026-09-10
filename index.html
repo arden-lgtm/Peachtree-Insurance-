@@ -200,10 +200,7 @@
   #approach{background:var(--surface);}
   .approach .eyebrow,
   .approach h2,
-  .approach .lede,
-  .approach-mark,
-  .approach-item h4,
-  .approach-item p{color:#111111;}
+  .approach .lede{color:#111111;}
   .approach .eyebrow{
     font-family:'Playfair Display',serif;font-style:italic;font-weight:600;
     font-size:22px;letter-spacing:0.02em;text-transform:none;
@@ -299,14 +296,6 @@
       radial-gradient(ellipse 900px 500px at 8% 0%, rgba(255,255,255,0.22), transparent 60%),
       linear-gradient(155deg, #F1CDB8 0%, #E9BCA3 38%, #DFA48C 70%, #D8957F 100%);
   }
-  .approach-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:start;}
-  @media (max-width:900px){ .approach-grid{grid-template-columns:1fr;gap:40px;} }
-  .approach-list{display:flex;flex-direction:column;}
-  .approach-item{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--border);}
-  .approach-item:last-child{border-bottom:1px solid var(--border);}
-  .approach-mark{font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:#111111;}
-  .approach-item h4{font-family:'Public Sans',sans-serif;font-weight:700;font-size:16.5px;margin:0 0 8px;color:var(--text);}
-  .approach-item p{margin:0;color:var(--text-soft);font-size:15px;line-height:1.65;max-width:46ch;}
 
   /* ---------- new to medicare: scaled down (scoped by id, not shared with #approach) ---------- */
   #new-to-medicare{padding-top:20px;padding-bottom:48px;}
@@ -566,42 +555,11 @@
 
   <!-- APPROACH + ABOUT LORI (combined) -->
   <section class="approach" id="approach">
-    <div class="wrap approach-grid">
-      <div>
+    <div class="wrap">
+      <div style="text-align:center;max-width:640px;margin:0 auto;">
         <p class="eyebrow">Our Approach</p>
         <h2 style="font-size:clamp(26px,3vw,34px);margin-top:16px;">Built like a firm, not a call center.</h2>
-        <p class="lede" style="margin-top:20px;max-width:44ch;">Every relationship starts with a conversation about your coverage and your budget &mdash; never a scripted pitch for a single product.</p>
-      </div>
-
-      <div class="approach-list">
-        <div class="approach-item">
-          <span class="approach-mark">01</span>
-          <div>
-            <h4>A conversation first, not a quote</h4>
-            <p>We start by reviewing your current coverage, doctors, prescriptions, and budget &mdash; before recommending anything.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">02</span>
-          <div>
-            <h4>Independent, carrier-agnostic advice</h4>
-            <p>We&rsquo;re not tied to one company, so we recommend the coverage that fits you &mdash; not what pays us the most.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">03</span>
-          <div>
-            <h4>Support that continues after enrollment</h4>
-            <p>Plans change every year. We review your coverage annually and are reachable when questions come up.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">04</span>
-          <div>
-            <h4>One advisor, your whole plan</h4>
-            <p>Medicare, life insurance, and retirement income are handled by the same team &mdash; so nothing falls between the cracks.</p>
-          </div>
-        </div>
+        <p class="lede" style="margin:20px auto 0;max-width:52ch;">Every relationship starts with a conversation about your coverage and your budget &mdash; never a scripted pitch for a single product.</p>
       </div>
     </div>
 
