@@ -305,18 +305,12 @@
   .approach-item p{margin:0;color:var(--text-soft);font-size:15px;line-height:1.65;max-width:46ch;}
 
   /* ---------- new to medicare: scaled down (scoped by id, not shared with #approach) ---------- */
-  #new-to-medicare{padding-top:22px;padding-bottom:22px;}
+  #new-to-medicare{padding-top:40px;padding-bottom:48px;}
   #new-to-medicare .eyebrow{font-size:28px;}
-  #new-to-medicare .approach-grid{gap:22px;}
-  #new-to-medicare .approach-item{padding:10px 0;}
-  #new-to-medicare .approach-mark{font-size:19px;}
-  #new-to-medicare .approach-item h4{font-size:16px;margin-bottom:4px;}
-  #new-to-medicare .approach-item p{font-size:14.5px;}
-  #new-to-medicare .checklist-card{padding:18px 20px;}
-  #new-to-medicare .checklist-card h3{font-size:16px;margin-bottom:10px;}
-  #new-to-medicare .checklist-card .practice-points{gap:6px;margin-bottom:16px;}
-  #new-to-medicare .practice-points li{font-size:12.5px;}
-  #new-to-medicare .practice-points svg{width:13px;height:13px;}
+  #new-to-medicare .approach-grid{gap:48px;align-items:center;}
+  #new-to-medicare .checklist-card{padding:36px 38px;}
+  #new-to-medicare .practice-points{gap:12px;}
+  #new-to-medicare .practice-points li{font-size:14.5px;line-height:1.55;}
 
   .carrier-note{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:36px;box-shadow:var(--shadow);}
   .carrier-note .eyebrow{margin-bottom:14px;}
@@ -546,42 +540,9 @@
       <div>
         <p class="eyebrow">New to Medicare</p>
         <h2 style="font-size:clamp(28px,3.4vw,36px);margin-top:10px;">Turning 65?<br>Here&rsquo;s where to start.</h2>
-        <p class="lede" style="margin-top:10px;max-width:44ch;font-size:18px;">Medicare has four parts and more than one enrollment window. In plain English, here&rsquo;s what each part covers.</p>
+        <p class="lede" style="margin-top:10px;max-width:46ch;font-size:18px;">Medicare has four parts and more than one enrollment window &mdash; explore the details in our Resources library, or start with the checklist.</p>
       </div>
 
-      <div class="approach-list">
-        <div class="approach-item">
-          <span class="approach-mark">A</span>
-          <div>
-            <h4>Part A &mdash; Hospital</h4>
-            <p>Covers inpatient hospital stays, skilled nursing, and hospice. Premium-free for most people.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">B</span>
-          <div>
-            <h4>Part B &mdash; Medical</h4>
-            <p>Covers doctor visits, outpatient care, and preventive services. Carries a monthly premium.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">C</span>
-          <div>
-            <h4>Part C &mdash; Medicare Advantage</h4>
-            <p>A private plan that bundles Parts A and B, and often Part D.</p>
-          </div>
-        </div>
-        <div class="approach-item">
-          <span class="approach-mark">D</span>
-          <div>
-            <h4>Part D &mdash; Prescription Drugs</h4>
-            <p>Stand-alone or bundled prescription drug coverage.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrap" style="margin-top:16px;max-width:720px;">
       <div class="checklist-card">
         <h3>A simple enrollment checklist</h3>
         <ul class="practice-points">
@@ -590,8 +551,12 @@
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Decide between an Advantage plan or Original Medicare + Supplement + Part D</li>
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Watch for late-enrollment penalties if you&rsquo;re delaying past your window without other coverage</li>
         </ul>
-        <a class="btn btn-primary" href="#contact">Schedule a New-to-Medicare Call</a>
       </div>
+    </div>
+
+    <div class="wrap" style="margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-primary" href="#contact">Schedule a New-to-Medicare Call</a>
+      <a class="btn btn-ghost" href="https://www.planenroll.com/learning-center?purl=LORI-AHLBRANDT#all" target="_blank" rel="noopener">Resources</a>
     </div>
   </section>
 
