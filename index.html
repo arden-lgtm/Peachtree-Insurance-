@@ -298,12 +298,14 @@
   }
 
   /* ---------- new to medicare: scaled down (scoped by id, not shared with #approach) ---------- */
-  #new-to-medicare{padding-top:20px;padding-bottom:48px;}
-  #new-to-medicare .eyebrow{font-size:28px;}
-  #new-to-medicare .checklist-card{padding:36px 38px;}
+  #new-to-medicare{padding-top:40px;padding-bottom:48px;}
+  #new-to-medicare .ntm-boxes{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:900px;margin:0 auto;}
+  @media (max-width:700px){ #new-to-medicare .ntm-boxes{grid-template-columns:1fr;} }
+  #new-to-medicare .checklist-card{padding:32px 34px;}
+  #new-to-medicare .checklist-card h3{text-align:center;}
+  #new-to-medicare .ntm-box-lede{color:var(--text-soft);font-size:14.5px;line-height:1.5;text-align:center;margin:8px 0 20px;}
   #new-to-medicare .practice-points{gap:12px;}
   #new-to-medicare .practice-points li{font-size:14.5px;line-height:1.55;}
-  @media (min-width:701px){ #new-to-medicare h2{white-space:nowrap;} }
 
   .carrier-note{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:36px;box-shadow:var(--shadow);}
   .carrier-note .eyebrow{margin-bottom:14px;}
@@ -530,15 +532,10 @@
 
   <!-- NEW TO MEDICARE -->
   <section class="approach" id="new-to-medicare">
-    <div class="wrap">
-      <div style="text-align:center;max-width:760px;margin:0 auto;">
-        <p class="eyebrow">New to Medicare</p>
-        <h2 style="font-size:clamp(24px,3vw,36px);margin-top:10px;">Turning 65?&ensp;&ensp;Here&rsquo;s where to start.</h2>
-        <p class="lede" style="margin:10px auto 0;max-width:60ch;font-size:18px;">Medicare has four parts and more than one enrollment window &mdash; explore the details in our Resources library, or start with the checklist.</p>
-      </div>
-
-      <div class="checklist-card" style="max-width:680px;margin:40px auto 0;">
-        <h3>A simple enrollment checklist</h3>
+    <div class="wrap ntm-boxes">
+      <div class="checklist-card">
+        <h3>New to Medicare</h3>
+        <p class="ntm-box-lede">Medicare has four parts and more than one enrollment window.</p>
         <ul class="practice-points">
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Confirm your Initial Enrollment Period &mdash; it runs 3 months before to 3 months after you turn 65</li>
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Gather your current doctors, prescriptions, and any employer coverage details</li>
@@ -546,10 +543,20 @@
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Watch for late-enrollment penalties if you&rsquo;re delaying past your window without other coverage</li>
         </ul>
       </div>
+
+      <div class="checklist-card">
+        <h3>New to Life Policies</h3>
+        <p class="ntm-box-lede">Term and final expense coverage, sized to protect the people who depend on you.</p>
+        <ul class="practice-points">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No-medical-exam options available on most final expense policies</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Coverage amounts from a few thousand dollars up to seven figures</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5 8 14l8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Beneficiary changes and policy reviews handled at no cost, any time</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="wrap ntm-actions" style="margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-      <a class="btn btn-primary" href="#contact">Schedule a New-to-Medicare Call</a>
+    <div class="wrap ntm-actions" style="margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-primary" href="tel:+17027105896">Call for Free Consultation</a>
       <a class="btn btn-ghost" href="https://www.planenroll.com/learning-center?purl=LORI-AHLBRANDT#all" target="_blank" rel="noopener">Resources</a>
     </div>
   </section>
